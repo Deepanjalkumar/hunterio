@@ -4,9 +4,9 @@
 
 # Installation : 
 
-          git clone https://github.com/Deepanjalkumar/binaryedge.git
+          git clone https://github.com/Deepanjalkumar/hunterio.git
           
-          cd binaryedge
+          cd hunterio
           
           pip3 install -r requirements.txt
           
