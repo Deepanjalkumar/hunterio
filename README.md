@@ -52,7 +52,7 @@ For support, contact me over linkeding Deepanjal kumar
   
 ## API Reference
 
-- [Binaryedge](https://binaryedge.io/)
+- [Hunter.io](https://hunter.io/)
 
   
 ## Authors
