@@ -1,0 +1,161 @@
+{% extends 'website/base.html' %}
+
+
+{% block content %}
+
+<div class="container px-4 py-4 text-center">
+    <h1><b>Connect with anyone. </b></h1>
+    <p>Hunter lets you find professional email addresses in seconds <br> and connect with the people that matter for your business. </p>
+    <div class="card border-warning mb-3 px-4 py-4 bg-light" >
+        <div class="card-body">
+            <form action="/" method="POST">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+                <button class="btn btn-outline-success">Search</button>
+              </div></form>
+        </div>
+      </div>
+      
+
+<div class="container py-4">
+    <div class="row py-2">
+        <div class="col">
+            <h1>Make new connections. </h1>
+            <h3>The Email Finder is all you need to connect with any professional. It puts all our data together—email formats, email addresses found on the web, verifications and other signals—to find the right contact information in seconds. </h3>
+        <button class="btn btn-primary">Get 25 free searches/month </button>
+        </div>
+        <div class="col">
+            <div class="row">
+                <h3> Find email addresses in bulk </h3>
+                    <p>
+                    The Email Finder can be performed to find the email address of a list of people. Upload your file in the dashboard and watch it being enriched.
+                    </p>
+                    <a href="#">Bulk Email Finder </a>
+            </div>
+            <div class="row">
+                <h3> Available in the API</h3>
+                    <p>
+                    The main services of Hunter are also available directly through our API. Find the email address of any professional with a simple API call.
+                    </p>
+                    <a href="#">Email Finder API</a> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center py-4">
+    <h1>
+        Common questions about the Domain Search</h1>
+        <div class="accordion px-4 py-4" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How accurate are the email address returned in the domain search
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Where does the data come from 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How can i find email address of someone if i already have their name
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Is the domain search free
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+          </div>
+</div>
+
+<div class="container py-4 text-center text-secondary">
+    <h1>Where the Domain Search can be used</h1>
+    <div class="row py-4">
+        <div class="col ">
+            <div class="card border-primary" style="width: 21rem; height: 10rem;">
+                <div class="card-body">
+                  <h3 class="card-title">Hunter website</h3>
+                  <p class="card-text">Type any company to find a list of email address</p>
+                </div>
+              </div>
+        </div>
+        <div class="col ">
+            <div class="card border-primary" style="width: 21rem; height: 10rem;">
+                <div class="card-body">
+                  <h3 class="card-title">Firefox add on </h3>
+                  <p class="card-text">Find the email address behind the website yo visit.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col ">
+            <div class="card border-primary" style="width: 21rem; height: 10rem;">
+                <div class="card-body">
+                  <h3 class="card-title">Bulks</h3>
+                  <p class="card-text">Enrich a list of companies or website with email address</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col ">
+            <div class="card border-primary" style="width: 21rem; height: 10rem;">
+                <div class="card-body">
+                  <h3 class="card-title">Google sheets add on </h3>
+                  <p class="card-text">Find email address directly inside google sheets</p>
+                </div>
+              </div>
+        </div>
+        <div class="col ">
+            <div class="card border-primary" style="width: 21rem; height: 10rem;">
+                <div class="card-body">
+                  <h3 class="card-title">API</h3>
+                  <p class="card-text">Build your own powerful tools around hunter's data</p>
+                </div>
+              </div>
+        </div>
+        <div class="col ">
+            <div class="card border-primary" style="width: 21rem; height: 10rem;">
+                <div class="card-body">
+                  <h3 class="card-title">Research</h3>
+                  <p class="card-text">Research around cyber reconnaissance and cyber attacks</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+

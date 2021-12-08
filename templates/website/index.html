@@ -1,0 +1,86 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+
+<div class="container px-4 py-4 text-center">
+    <h1><b>Connect with anyone. </b></h1>
+    <p>Hunter lets you find professional email addresses in seconds <br> and connect with the people that matter for your business. </p>
+    <div class="card border-warning mb-3 px-4 py-4 bg-light" >
+        <div class="card-body">
+            <form action="/" method="POST">
+            {% csrf_token %}
+                <input class="large" size="70%" type="text" name="domain" id="domain" placeholder="company.com"> <button class="btn btn-primary">Find email address search</button>
+                <p class="mt-2"><b class="text-secondary">Enter a domain name to launch the search. For example, hunter.io.</b></p>
+            </form>
+        </div>
+      </div>
+      <p class="text-center">Hunter is used by 3,000,000+ professionals and chosen by leading companies. </p>
+      {% if email ==  "Not found"  %}
+      
+      <h3>Not found</h3>
+      {% else %}
+      <table class="table table-borderless">
+        <tbody>
+            {% for ema in email  %}
+          <tr>
+            <th scope="row">{{ema}}</th>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+      {% endif %}
+      
+      <div class="row">
+          <div class="col">
+              <img src="https://logo.clearbit.com/google.com" alt="">
+          </div>
+          <div class="col">
+              <img src="https://logo.clearbit.com/ibm.com" alt="">
+          </div>
+          <div class="col">
+              <img src="https://logo.clearbit.com/microsoft.com" alt="">
+          </div>
+      </div>
+</div>
+<hr>
+
+<div class="container text-secondary text-center px-4">
+    <div>
+        <h5>
+            Domain Search <br> <br>
+            Get the email addresses behind any website. <br> <br>
+            
+            The Domain Search lists all the people working in a company with their name and email address found on the web. With 100+ million email addresses indexed, effective search filters and scoring, it's Hunter's most powerful email-finding tool. <br> <br>
+            Receive 25 free searches/month
+            </h5>
+    </div>
+    <div class="row py-4">
+        <div class="col">
+            <img src="https://hunter.io/assets/screenshots/domain_search_screenshot-6c599744c002ee10692d4e4656d707ee62697750be0def14682e950914836935.jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="col">
+            Type filter <br>
+            List only the personal or the role-based email addresses. For example, addresses like "contact@". <br>
+            <hr>
+            Email pattern <br>
+            Get the most common email format used in the organization from dozens of possible combinations. <br>
+            <hr>
+            Find someone <br>            
+            Type a name and get the proven or most likely email address of this person. <br>
+            <hr>
+            Score & verification <br>            
+            Find verified email addresses or get a confidence score in percentage. <br>
+            <hr>
+            Save a lead <br>
+            <hr>
+            Save any profile to your leads to export or synchronize them with your favorite CRM. <br>
+            Sources <br>            
+            Every email address has public sources you can check along with the last discovery dates. <br>
+            <hr>           
+            
+        </div>
+    </div>
+</div>
+<hr>
+{% endblock content %}
